@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer>
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="chooseItems">
+            <div class="chooseYourBurger">
+                <p class="proposal">Выберите размер гамбургера:</p>
+                <p><input type="radio" name="burger" value="1" onclick="chooseYourFood.setItemsInWindow()"
+                        checked>Маленький
+                    гамбургер
+                </p>
+                <p><input type="radio" name="burger" value="2" onclick="chooseYourFood.setItemsInWindow()">Большой
+                    гамбургер
+                </p>
+            </div>
+            <div class=" chooseYourTopping">
+                <p class="proposal">Выберите начинку:</p>
+                <p><input type="radio" name="topping" value="3" onclick="chooseYourFood.setItemsInWindow()" checked>Сыр
+                </p>
+                <p><input type="radio" name="topping" value="4" onclick="chooseYourFood.setItemsInWindow()">Салат
+                </p>
+                <p><input type="radio" name="topping" value="5" onclick="chooseYourFood.setItemsInWindow()">Картофель
+                    фри
+                </p>
+            </div class="chooseYourAddition">
+            <div>
+                <p class="proposal">Выберите дополнение к гамбургеру:</p>
+                <p><input type="checkbox" name="addition" value="6" onclick="chooseYourFood.setItemsInWindow()">Приправа
+                </p>
+                <p><input type="checkbox" name="addition" value="7" onclick="chooseYourFood.setItemsInWindow()">Майонез
+                </p>
+            </div>
+        </div>
+        <div class="viewOfItems">
+            <p>
+
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

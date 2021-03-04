@@ -1,0 +1,42 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    width: 900px;
+}
+p {
+    padding-left: 30px;
+}
+.chooseItems {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid rgb(3, 255, 36);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.viewOfItems {
+    padding: 10px;
+    border: 1px solid rgb(3, 255, 36);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.itemsInbasket {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 30px;
+}
+#first {
+    width: 200px;
+}
+#second {
+    width: 150px;
+}
+.allSum {
+    padding-top: 100px;
+}
+.proposal {
+    margin-left: -30px;
+}
