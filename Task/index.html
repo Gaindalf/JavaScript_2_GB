@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <p>E-SHOP</p>
+        <button class="btn-cart" type="button" onclick="location.hash ='modalWindow'">Корзина</button>
+    </header>
+    <main>
+        <div class="products"></div>
+    </main>
+    <script src="js/main.js"></script>
+
+    <div id="modalWindow">
+        <window>
+            <div class='basket'>
+
+            </div>
+            <div class='sum'>
+            </div>
+            <div class="forButtonInBasket"><button onclick="location.hash ='close_window'"> Закрыть</button>
+            </div>
+        </window>
+    </div>
+</body>
+
+</html>
