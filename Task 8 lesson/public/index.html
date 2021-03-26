@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">E-shop</div>
+            <div class="cart">
+                <search v-on:usersearch="searchItem" :search="search"></search>
+                <button class="btn-cart" type="button" onclick="location.hash ='modalWindow'" @click="AllSum()">Корзина:
+                    {{ productsinbasket.length }}</button>
+            </div>
+        </header>
+        <main>
+            <products :products="products" :img="imgCatalog" @add-product="addProduct"></products>
+            <server-error v-show="errorVisible"></server-error>
+        </main>
+        <div id="modalWindow">
+            <div class="window">
+                <div class="products">
+                    <cart :items="productsinbasket" :all-sum="allSum" @delete-item="deleteItemFromBasket"
+                        @show-sum="AllSum(value)" @less-quantity="lessQuantity" @more-quantity="moreQuantity">
+                    </cart>
+                </div>
+                <div class="forButtonInBasket"><button onclick="location.hash ='close_window'"> Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/error.js" defer></script>
+    <script src="js/searchComponent.js" defer></script>
+    <script src="js/productComponent.js" defer></script>
+    <script src="js/basketComponent.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
